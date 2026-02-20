@@ -57,6 +57,15 @@
 
     html {
         scroll-behavior: smooth;
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE/Edge */
+    }
+
+    html::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari, Opera */
     }
 
     body {
@@ -79,24 +88,7 @@
     }
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f8f9fa;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #e9ecef;
-    border-radius: 5px;
-    border: 2px solid #f8f9fa;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--brand-orange);
-}
+/* Custom Scrollbar disabled */
 
 /* Gradient Text using Brand Colors */
 .gradient-text {
