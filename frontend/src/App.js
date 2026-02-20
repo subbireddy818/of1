@@ -3,7 +3,7 @@ import "./App.css";
 import { Toaster } from 'sonner';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { Classes } from './components/Classes';
+import { Services } from './components/Services';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { Gallery } from './components/Gallery';
 import { Testimonials } from './components/Testimonials';
@@ -22,7 +22,7 @@ function App() {
 
             <main>
                 <Hero />
-                <Classes />
+                <Services />
                 <WhyChooseUs />
                 <Newsletter />
                 <Partnerships />
