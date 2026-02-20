@@ -64,7 +64,9 @@ export const SocialVideos = () => {
                         className="pb-2"
                     >
                         <a
-                            href="#"
+                            href="https://www.instagram.com/orangefigs"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-lg font-black text-gray-900 hover:text-primary transition-colors flex items-center gap-2 group"
                         >
                             Follow @orangefigs

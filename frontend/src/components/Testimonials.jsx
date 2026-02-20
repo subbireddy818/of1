@@ -84,7 +84,7 @@ export const Testimonials = () => {
     const [page, setPage] = useState(0);
 
     const prev = () => setPage((p) => (p - 1 + totalPages) % totalPages);
-    const next = useCallback(() => setPage((p) => (p + 1) % totalPages), [totalPages]);
+    const next = useCallback(() => setPage((p) => (p + 1) % totalPages), []);
 
     useEffect(() => {
         const timer = setInterval(next, 7000);

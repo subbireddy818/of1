@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChefHat, Search, Heart, User, ShoppingCart, ChevronDown } from 'lucide-react';
+import { Menu, X, Search, Heart, User, ShoppingCart, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 

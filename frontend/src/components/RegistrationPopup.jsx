@@ -4,13 +4,10 @@ import {
     DialogContent,
     DialogHeader,
     DialogTitle,
-    DialogDescription,
-    DialogFooter,
     DialogClose,
 } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import { Label } from "./ui/label";
 import { toast } from 'sonner';
 import { ChefHat, X } from 'lucide-react';
 
