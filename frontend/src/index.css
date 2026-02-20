@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Primary Brand Colours */
+        --brand-orange: #FCAB52;
+        --brand-plum: #B42A63;
+        --brand-red: #FA4A38;
+        --brand-magenta: #D4145A;
+
+        /* Secondary Brand Colours */
+        --secondary-yellow: #FDD871;
+        --secondary-pink-red: #FA1A55;
+        --secondary-green: #74BB42;
+        --secondary-teal: #3BC7D5;
+        --secondary-blue: #366BC4;
+        --secondary-pink: #FA6BA5;
+        --secondary-brown: #9A5824;
+        --secondary-beige: #D1B18A;
+
+        --background: 0 0% 100%;
+        --foreground: 220 15% 10%;
+        --card: 0 0% 100%;
+        --card-foreground: 220 15% 10%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 220 15% 10%;
+
+        /* Mapping primary/secondary for existing components */
+        --primary: 33 96% 66%;
+        /* FCAB52 */
+        --primary-foreground: 0 0% 100%;
+        --secondary: 332 62% 43%;
+        /* B42A63 */
+        --secondary-foreground: 0 0% 100%;
+
+        --muted: 220 10% 96%;
+        --muted-foreground: 220 10% 45%;
+        --accent: 220 10% 96%;
+        --accent-foreground: 220 15% 10%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 220 13% 91%;
+        --input: 220 13% 91%;
+        --ring: 33 96% 66%;
+        --radius: 1.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border selection:bg-brand-orange/20 selection:text-brand-orange;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Montserrat', sans-serif;
+        /* Proxy for Andes */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.01em;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e9ecef;
+    border-radius: 5px;
+    border: 2px solid #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-orange);
+}
+
+/* Gradient Text using Brand Colors */
+.gradient-text {
+    @apply bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient;
+    background-image: linear-gradient(to right, #FCAB52, #D4145A, #B42A63, #FCAB52);
+}
+
+.gradient-text-light {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white/80 to-white bg-[length:200%_auto] animate-gradient;
+}
+
+/* Section Padding */
+.section-padding {
+    @apply py-24 lg:py-32;
+}
+
+/* Container */
+.container-custom {
+    @apply max-w-7xl mx-auto px-6 lg:px-12;
+}
+
+/* Backgrounds */
+.bg-cream {
+    background-color: #FAFAFA;
+}
+
+/* Animations */
+@keyframes gradient {
+    0% {
+        background-position: 0% center;
+    }
+
+    50% {
+        background-position: 100% center;
+    }
+
+    100% {
+        background-position: 0% center;
+    }
+}
+
+.animate-gradient {
+    animation: gradient 6s ease infinite;
+}
+
+/* Glassmorphism */
+.glass-header {
+    @apply bg-white/80 backdrop-blur-lg;
+}
+
+.glass-card {
+    @apply bg-white/40 backdrop-blur-xl border border-white/20;
+}
+
+/* Shadows */
+.shadow-premium {
+    box-shadow: 0 25px 80px -20px rgba(0, 0, 0, 0.08);
+}
+
+/* Layout Utilities */
+.perspective-2000 {
+    perspective: 2000px;
+}
+
+.nav-link {
+    @apply relative text-gray-900 transition-colors duration-300;
+}
+
+.nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+    @apply w-full;
+}
+
+.nav-link:hover {
+    @apply text-primary;
+}
+
+@keyframes bounce-slow {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 4s ease-in-out infinite;
+}
+
+.animate-bounce-slow-delay {
+    animation: bounce-slow 4s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    33% {
+        transform: translateY(-10px) rotate(2deg);
+    }
+
+    66% {
+        transform: translateY(5px) rotate(-1deg);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
