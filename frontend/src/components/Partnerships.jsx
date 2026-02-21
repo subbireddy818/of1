@@ -18,7 +18,7 @@ export const Partnerships = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#D4145A]/20 bg-[#D4145A]/5 text-[#D4145A] font-bold text-xs uppercase tracking-[0.2em]"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-primary/20 bg-primary/5 text-primary font-bold text-xs uppercase tracking-[0.2em]"
                     >
                         Our Partnerships
                     </motion.div>
@@ -29,7 +29,7 @@ export const Partnerships = () => {
                         transition={{ delay: 0.1 }}
                         className="text-4xl lg:text-5xl font-black text-gray-900 tracking-tight"
                     >
-                        In Collaboration with <span style={{ color: '#D4145A' }}>The Best.</span>
+                        In Collaboration with <span className="text-primary">The Best.</span>
                     </motion.h2>
                 </div>
 

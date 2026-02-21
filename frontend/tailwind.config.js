@@ -25,29 +25,26 @@ module.exports = {
                 foreground: "hsl(var(--foreground))",
                 brand: {
                     orange: "#FCAB52",
-                    plum: "#B42A63",
-                    red: "#FA4A38",
-                    magenta: "#D4145A",
-                    yellow: "#FDD871",
-                    pinkRed: "#FA1A55",
-                    green: "#74BB42",
-                    teal: "#3BC7D5",
-                    blue: "#366BC4",
-                    pink: "#FA6BA5",
-                    brown: "#9A5824",
-                    beige: "#D1B18A",
+                    orangeLight: "#FDBA74",
+                    orangeDark: "#EA580C",
+                    amber: "#B45309",
+                    warmBlack: "#1A120B",
                 },
                 primary: {
-                    DEFAULT: "#FCAB52",
-                    foreground: "#FFFFFF",
+                    DEFAULT: "hsl(var(--primary))",
+                    foreground: "hsl(var(--primary-foreground))",
                 },
                 secondary: {
-                    DEFAULT: "#B42A63",
-                    foreground: "#FFFFFF",
+                    DEFAULT: "hsl(var(--secondary))",
+                    foreground: "hsl(var(--secondary-foreground))",
                 },
                 magenta: {
-                    DEFAULT: "#D4145A",
-                    foreground: "#FFFFFF",
+                    DEFAULT: "hsl(var(--magenta))",
+                    foreground: "hsl(var(--magenta-foreground))",
+                },
+                accent: {
+                    DEFAULT: "hsl(var(--accent))",
+                    foreground: "hsl(var(--accent-foreground))",
                 },
                 subtle: {
                     DEFAULT: "#64748b",
@@ -59,10 +56,6 @@ module.exports = {
                 muted: {
                     DEFAULT: "hsl(var(--muted))",
                     foreground: "hsl(var(--muted-foreground))",
-                },
-                accent: {
-                    DEFAULT: "hsl(var(--accent))",
-                    foreground: "hsl(var(--accent-foreground))",
                 },
                 popover: {
                     DEFAULT: "hsl(var(--popover))",

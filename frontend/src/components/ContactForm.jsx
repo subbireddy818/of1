@@ -194,7 +194,7 @@ export const ContactForm = () => {
 
                                         <Button
                                             disabled={isSubmitting}
-                                            className="w-full h-16 rounded-2xl bg-gradient-to-r from-primary to-magenta text-white font-black text-lg shadow-xl hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 group"
+                                            className="w-full h-16 rounded-2xl bg-gradient-to-r from-primary to-secondary text-white font-black text-lg shadow-xl hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 group"
                                         >
                                             {isSubmitting ? (
                                                 <span className="flex items-center gap-2">
@@ -239,7 +239,7 @@ export const ContactForm = () => {
 
                         {/* Background Floating Decorative Cards */}
                         <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/10 rounded-full blur-[40px] -z-10" />
-                        <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-magenta/10 rounded-full blur-[50px] -z-10" />
+                        <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-[50px] -z-10" />
                     </motion.div>
                 </div>
             </div>

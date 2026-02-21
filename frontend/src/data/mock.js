@@ -28,7 +28,7 @@ export const classesData = [
         description: 'Developing techniques in chopping, sautéing, and flavor profiling.',
         features: ['Knife Skills', 'Sauce Making', 'Baking Basics'],
         price: '60',
-        color: '#B42A63'
+        color: '#EA580C'
     },
     {
         id: 3,
@@ -40,7 +40,7 @@ export const classesData = [
         description: 'Complex recipes and plating techniques for the aspiring chef.',
         features: ['Pastry Arts', 'International Cuisine', 'Food Styling'],
         price: '75',
-        color: '#D4145A'
+        color: '#C2410C'
     }
 ];
 
@@ -77,21 +77,21 @@ export const whyChooseUs = [
         title: 'Expert Instructors',
         description: 'Guided by Michelin-experienced chefs who specialize in child development.',
         icon: 'UserCheck',
-        color: '#74BB42'
+        color: '#FCAB52'
     },
     {
         id: 2,
         title: 'Safety First',
         description: 'State-of-the-art kitchen with induction heating and kid-specific safety tools.',
         icon: 'ShieldCheck',
-        color: '#366BC4'
+        color: '#EA580C'
     },
     {
         id: 3,
         title: 'Healthy Habits',
         description: 'Cultivating a lifelong appreciation for fresh, whole ingredients and balanced meals.',
         icon: 'HeartPulse',
-        color: '#FA1A55'
+        color: '#FA4A38'
     }
 ];
 

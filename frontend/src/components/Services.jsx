@@ -66,7 +66,7 @@ export const Services = () => {
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="inline-block text-xs font-black uppercase tracking-[0.2em] text-[#D4145A] bg-[#FFF0F5] px-4 py-2 rounded-full"
+                            className="inline-block text-xs font-black uppercase tracking-[0.2em] text-primary bg-primary/10 px-4 py-2 rounded-full"
                         >
                             Our Services
                         </motion.span>
@@ -77,7 +77,7 @@ export const Services = () => {
                             transition={{ delay: 0.1 }}
                             className="text-5xl lg:text-6xl font-black text-gray-900 leading-tight tracking-tight"
                         >
-                            What We <span style={{ color: '#D4145A' }}>Offer</span>
+                            What We <span className="text-primary">Offer</span>
                         </motion.h2>
                     </div>
                     <motion.p

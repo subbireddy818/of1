@@ -2,6 +2,7 @@ import React from 'react';
 import { ChefHat, Mail, Phone, MapPin, Instagram, Facebook, Youtube, Twitter, ArrowUp, Heart } from 'lucide-react';
 import { contactInfo } from '../data/mock';
 import { motion } from 'framer-motion';
+import logo from '../assets/logo.jpg';
 
 export const Footer = () => {
     const scrollToTop = () => {
@@ -51,8 +52,8 @@ export const Footer = () => {
                             viewport={{ once: true }}
                             className="flex items-center gap-3"
                         >
-                            <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center text-white shadow-lg shadow-primary/20">
-                                <ChefHat size={32} strokeWidth={2.5} />
+                            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg">
+                                <img src={logo} alt="Orange Figs Logo" className="w-10 h-10 object-contain" />
                             </div>
                             <div>
                                 <span className="text-3xl font-black text-white tracking-tighter">ORANGE FIGS</span>

@@ -98,7 +98,7 @@ export const Testimonials = () => {
             id="testimonials"
             className="overflow-hidden"
             style={{
-                backgroundColor: '#FCAB52',
+                backgroundColor: 'hsl(var(--primary))',
                 paddingTop: '60px',
                 paddingBottom: '20px'
             }}
@@ -106,7 +106,7 @@ export const Testimonials = () => {
             <div className="container-custom">
 
                 {/* ── Heading ── */}
-                <h2 className="text-3xl lg:text-4xl font-black text-[#D4145A] text-center mb-12 tracking-tight">
+                <h2 className="text-3xl lg:text-4xl font-black text-secondary text-center mb-12 tracking-tight">
                     See why families love us…
                 </h2>
 
@@ -130,8 +130,8 @@ export const Testimonials = () => {
                                         minHeight: '280px'
                                     }}
                                 >
-                                    {/* Left Pink Bar */}
-                                    <div className="absolute left-0 top-10 bottom-10 w-1.5 bg-[#D4145A] rounded-r-full" />
+                                    {/* Left Accent Bar */}
+                                    <div className="absolute left-0 top-10 bottom-10 w-1.5 bg-secondary rounded-r-full" />
 
                                     {/* Stars */}
                                     <div className="flex gap-0.5">
@@ -158,7 +158,7 @@ export const Testimonials = () => {
                     {/* Prev Circle */}
                     <button
                         onClick={prev}
-                        className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#D4145A] shadow-md hover:scale-105 transition-transform"
+                        className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-secondary shadow-md hover:scale-105 transition-transform"
                     >
                         <ChevronLeft size={24} strokeWidth={2.5} />
                     </button>
@@ -178,7 +178,7 @@ export const Testimonials = () => {
                     {/* Next Circle */}
                     <button
                         onClick={next}
-                        className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#D4145A] shadow-md hover:scale-105 transition-transform"
+                        className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-secondary shadow-md hover:scale-105 transition-transform"
                     >
                         <ChevronRight size={24} strokeWidth={2.5} />
                     </button>

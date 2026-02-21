@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Search, Heart, User, ShoppingCart, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../assets/logo.jpg';
 
 export const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -41,15 +42,16 @@ export const Header = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6 }}
                     style={{ height: '77.21px', maxWidth: isScrolled ? '100%' : '1408px' }}
-                    className={`mx-auto w-full bg-[#D4145A] border-b border-white/10 flex items-center transition-all duration-300 ${isScrolled ? 'rounded-none shadow-xl' : 'rounded-[2rem]'}`}
+                    className={`mx-auto w-full flex items-center transition-all duration-300 ${isScrolled ? 'bg-primary rounded-none shadow-xl' : 'bg-primary rounded-[2rem] shadow-lg shadow-primary/20'}`}
                 >
                     <nav className="px-8 lg:px-10 flex items-center justify-between w-full h-full">
                         {/* Logo */}
                         <div
-                            className="flex items-center gap-2 cursor-pointer"
+                            className="flex items-center gap-4 cursor-pointer"
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         >
-                            <span className="text-3xl font-black italic tracking-tighter text-white font-serif">
+                            <img src={logo} alt="Orange Figs Logo" className="w-16 h-16 object-contain rounded-xl" />
+                            <span className="text-3xl font-black italic tracking-tighter text-white font-serif drop-shadow-md">
                                 OrangeFigs
                             </span>
                         </div>
@@ -73,7 +75,7 @@ export const Header = () => {
                                 <Button
                                     variant="outline"
                                     onClick={() => scrollToSection('contact')}
-                                    className="bg-white text-[#D4145A] hover:bg-white/90 border-none rounded-full h-11 px-8 font-bold text-sm"
+                                    className="bg-white text-primary hover:bg-white/90 border-none rounded-full h-11 px-8 font-bold text-sm"
                                 >
                                     Subscribe today
                                 </Button>
@@ -97,7 +99,7 @@ export const Header = () => {
                                 initial={{ opacity: 0, height: 0 }}
                                 animate={{ opacity: 1, height: 'auto' }}
                                 exit={{ opacity: 0, height: 0 }}
-                                className="lg:hidden absolute top-full left-0 right-0 mt-2 mx-4 overflow-hidden rounded-3xl bg-[#D4145A] shadow-2xl"
+                                className="lg:hidden absolute top-full left-0 right-0 mt-2 mx-4 overflow-hidden rounded-3xl bg-primary shadow-2xl"
                             >
                                 <div className="px-8 py-8 flex flex-col gap-4">
                                     {navItems.map((item) => (
@@ -111,7 +113,7 @@ export const Header = () => {
                                     ))}
                                     <Button
                                         onClick={() => scrollToSection('contact')}
-                                        className="bg-white text-[#D4145A] mt-4 h-14 rounded-2xl text-lg font-bold"
+                                        className="bg-white text-primary mt-4 h-14 rounded-2xl text-lg font-bold"
                                     >
                                         Subscribe today
                                     </Button>

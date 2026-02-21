@@ -20,10 +20,10 @@ export const Hero = () => {
                     {/* Left Content */}
                     <div className="space-y-8 pt-12">
                         <div className="space-y-6">
-                            <h1 className="text-5xl lg:text-[56px] font-black text-[#D4145A] leading-[1.1] tracking-tight">
-                                Baking The World a <br />
-                                Better Place <br />
-                                Together.
+                            <h1 className="text-5xl lg:text-[56px] font-black leading-[1.1] tracking-tight">
+                                <span className="text-primary">Baking The World a</span> <br />
+                                <span className="text-magenta">Better Place</span> <br />
+                                <span className="text-gray-900">Together.</span>
                             </h1>
                             <p className="text-lg lg:text-xl text-gray-700 max-w-lg font-medium leading-relaxed">
                                 Bring Your Family Closer – One Sweet Recipe at a Time.<br />
@@ -35,14 +35,14 @@ export const Hero = () => {
                         <div className="flex flex-wrap gap-4">
                             <Button
                                 onClick={() => scrollToSection('classes')}
-                                className="h-14 px-10 rounded-full bg-[#D4145A] hover:bg-[#B42A63] text-white font-bold text-lg shadow-lg transition-all active:scale-95"
+                                className="h-14 px-10 rounded-full bg-primary hover:bg-primary/90 text-white font-bold text-lg shadow-lg transition-all active:scale-95"
                             >
                                 Subscribe
                             </Button>
                             <Button
                                 variant="outline"
                                 onClick={() => scrollToSection('contact')}
-                                className="h-14 px-10 rounded-full border-2 border-[#D4145A] text-[#D4145A] hover:bg-[#D4145A] hover:text-white font-bold text-lg transition-all"
+                                className="h-14 px-10 rounded-full border-2 border-magenta text-magenta hover:bg-magenta hover:text-white font-bold text-lg transition-all"
                             >
                                 Give a Gift
                             </Button>

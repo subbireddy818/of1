@@ -56,7 +56,7 @@ export const About = () => {
                                 alt="Culinary Workshop"
                                 className="w-full h-[600px] object-cover"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-magenta/20" />
+                            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20" />
                         </div>
 
                         {/* Decorative Badge */}

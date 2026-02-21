@@ -10,6 +10,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { toast } from 'sonner';
 import { ChefHat, X } from 'lucide-react';
+import logo from '../assets/logo.jpg';
 
 export const RegistrationPopup = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ export const RegistrationPopup = () => {
 
     return (
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
-            <DialogContent hideClose className="sm:max-w-[850px] p-0 overflow-hidden border-[4px] border-[#D4145A] rounded-[3.5rem] bg-white shadow-2xl flex flex-col md:flex-row h-[500px]">
+            <DialogContent hideClose className="sm:max-w-[850px] p-0 overflow-hidden border-[4px] border-secondary rounded-[3.5rem] bg-white shadow-2xl flex flex-col md:flex-row h-[500px]">
                 {/* Left side: Image */}
                 <div className="relative w-full md:w-1/2 h-48 md:h-full bg-gray-100">
                     <img
@@ -53,20 +54,21 @@ export const RegistrationPopup = () => {
 
                 {/* Right side: Form */}
                 <div className="w-full md:w-1/2 p-10 flex flex-col justify-center text-center relative">
-                    <DialogClose className="absolute right-6 top-6 w-10 h-10 rounded-full bg-pink-50 flex items-center justify-center text-[#D4145A] hover:bg-pink-100 transition-colors">
+                    <DialogClose className="absolute right-6 top-6 w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-primary hover:bg-orange-100 transition-colors">
                         <X size={20} />
                     </DialogClose>
 
                     <div className="space-y-8 max-w-[320px] mx-auto">
                         <div className="flex flex-col items-center gap-4">
-                            <div className="flex items-center gap-2">
-                                <span className="text-xl font-black italic tracking-tighter text-[#D4145A] font-serif">
+                            <div className="flex items-center gap-3">
+                                <img src={logo} alt="Orange Figs Logo" className="w-8 h-8 object-contain" />
+                                <span className="text-xl font-black italic tracking-tighter text-primary font-serif">
                                     OrangeFigs
                                 </span>
                             </div>
                             <h2 className="text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
                                 You've Got A <br />
-                                <span className="text-[#D4145A]">Mystery Discount</span>
+                                <span className="text-primary">Mystery Discount</span>
                             </h2>
                         </div>
 
@@ -75,11 +77,11 @@ export const RegistrationPopup = () => {
                                 type="email"
                                 placeholder="Your email address"
                                 required
-                                className="h-14 px-6 rounded-full border-gray-200 bg-gray-50/50 text-center text-lg font-medium focus:ring-2 focus:ring-[#D4145A]/20"
+                                className="h-14 px-6 rounded-full border-gray-200 bg-gray-50/50 text-center text-lg font-medium focus:ring-2 focus:ring-primary/20"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
-                            <Button type="submit" className="w-full h-14 rounded-full bg-[#D4145A] hover:bg-[#B42A63] text-white font-black text-xl shadow-xl transition-all active:scale-95">
+                            <Button type="submit" className="w-full h-14 rounded-full bg-primary hover:bg-primary/90 text-white font-black text-xl shadow-xl transition-all active:scale-95">
                                 Continue
                             </Button>
                         </form>

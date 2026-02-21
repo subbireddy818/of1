@@ -31,7 +31,7 @@ export const Newsletter = () => {
                     transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1] }}
                     className="relative rounded-[3rem] overflow-hidden"
                     style={{
-                        background: 'linear-gradient(135deg, #D4145A 0%, #B42A63 40%, #6D1F7A 100%)',
+                        background: 'linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--magenta)) 100%)',
                     }}
                 >
                     {/* ── Decorative circles ── */}
@@ -58,7 +58,7 @@ export const Newsletter = () => {
                                     viewport={{ once: true }}
                                     className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/20 text-white text-xs font-black uppercase tracking-[0.2em] px-4 py-2 rounded-full mb-6"
                                 >
-                                    <Sparkles size={14} className="text-[#FCAB52]" />
+                                    <Sparkles size={14} className="text-white" />
                                     Stay in the Loop
                                 </motion.div>
                                 <motion.h2
@@ -69,7 +69,7 @@ export const Newsletter = () => {
                                     className="text-5xl lg:text-6xl font-black text-white leading-[1.05] tracking-tight"
                                 >
                                     Get the Best <br />
-                                    <span className="text-[#FCAB52]">Delivered</span> <br />
+                                    <span className="text-white">Delivered</span> <br />
                                     to You.
                                 </motion.h2>
                             </div>
@@ -96,7 +96,7 @@ export const Newsletter = () => {
                                     return (
                                         <li key={i} className="flex items-center gap-3 text-white/90 font-medium text-[15px]">
                                             <div className="w-8 h-8 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
-                                                <Icon size={15} className="text-[#FCAB52]" />
+                                                <Icon size={15} className="text-white" />
                                             </div>
                                             {perk.text}
                                         </li>
@@ -137,7 +137,7 @@ export const Newsletter = () => {
                                                     required
                                                     value={name}
                                                     onChange={(e) => setName(e.target.value)}
-                                                    className="w-full h-14 px-5 rounded-2xl border-2 border-gray-100 bg-gray-50 text-gray-900 font-medium text-sm focus:outline-none focus:border-[#D4145A] transition-colors"
+                                                    className="w-full h-14 px-5 rounded-2xl border-2 border-gray-100 bg-gray-50 text-gray-900 font-medium text-sm focus:outline-none focus:border-primary transition-colors"
                                                 />
                                             </div>
 
@@ -152,7 +152,7 @@ export const Newsletter = () => {
                                                         required
                                                         value={email}
                                                         onChange={(e) => setEmail(e.target.value)}
-                                                        className="w-full h-14 pl-12 pr-5 rounded-2xl border-2 border-gray-100 bg-gray-50 text-gray-900 font-medium text-sm focus:outline-none focus:border-[#D4145A] transition-colors"
+                                                        className="w-full h-14 pl-12 pr-5 rounded-2xl border-2 border-gray-100 bg-gray-50 text-gray-900 font-medium text-sm focus:outline-none focus:border-primary transition-colors"
                                                     />
                                                 </div>
                                             </div>
@@ -160,7 +160,7 @@ export const Newsletter = () => {
                                             <button
                                                 type="submit"
                                                 className="w-full h-14 rounded-2xl font-black text-base text-white shadow-xl transition-all active:scale-[0.98] hover:opacity-90 mt-2"
-                                                style={{ background: 'linear-gradient(135deg, #D4145A, #B42A63)' }}
+                                                style={{ background: 'linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)))' }}
                                             >
                                                 Subscribe Now →
                                             </button>

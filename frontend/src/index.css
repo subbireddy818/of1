@@ -6,46 +6,48 @@
 
 @layer base {
     :root {
-        /* Primary Brand Colours */
+        /* Primary Brand Colours - The Orange Figs Palette */
         --brand-orange: #FCAB52;
+        --brand-orange-light: #FDBA74;
+        --brand-orange-dark: #EA580C;
         --brand-plum: #B42A63;
-        --brand-red: #FA4A38;
         --brand-magenta: #D4145A;
+        --brand-warm-black: #1A120B;
 
-        /* Secondary Brand Colours */
-        --secondary-yellow: #FDD871;
-        --secondary-pink-red: #FA1A55;
-        --secondary-green: #74BB42;
-        --secondary-teal: #3BC7D5;
-        --secondary-blue: #366BC4;
-        --secondary-pink: #FA6BA5;
-        --secondary-brown: #9A5824;
-        --secondary-beige: #D1B18A;
-
-        --background: 0 0% 100%;
-        --foreground: 220 15% 10%;
+        --background: 30 20% 99%;
+        --foreground: 20 20% 10%;
         --card: 0 0% 100%;
-        --card-foreground: 220 15% 10%;
+        --card-foreground: 20 20% 10%;
         --popover: 0 0% 100%;
-        --popover-foreground: 220 15% 10%;
+        --popover-foreground: 20 20% 10%;
 
-        /* Mapping primary/secondary for existing components */
-        --primary: 33 96% 66%;
-        /* FCAB52 */
+        /* Theme Mapping */
+        --primary: 31 97% 65%;
+        /* #FCAB52 */
         --primary-foreground: 0 0% 100%;
-        --secondary: 332 62% 43%;
-        /* B42A63 */
+
+        --secondary: 335 62% 44%;
+        /* #B42A63 (Plum Pink) */
         --secondary-foreground: 0 0% 100%;
 
-        --muted: 220 10% 96%;
-        --muted-foreground: 220 10% 45%;
-        --accent: 220 10% 96%;
-        --accent-foreground: 220 15% 10%;
+        --magenta: 338 83% 45%;
+        /* #D4145A (Magenta Pink) */
+        --magenta-foreground: 0 0% 100%;
+
+        --accent: 31 100% 95%;
+        /* Very light orange tint */
+        --accent-foreground: 20 90% 30%;
+
+        --muted: 30 10% 96%;
+        --muted-foreground: 20 10% 45%;
+
         --destructive: 0 84% 60%;
         --destructive-foreground: 0 0% 98%;
-        --border: 220 13% 91%;
-        --input: 220 13% 91%;
-        --ring: 33 96% 66%;
+
+        --border: 30 15% 90%;
+        --input: 30 15% 90%;
+        --ring: 31 97% 65%;
+
         --radius: 1.5rem;
     }
 }
@@ -93,7 +95,7 @@
 /* Gradient Text using Brand Colors */
 .gradient-text {
     @apply bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient;
-    background-image: linear-gradient(to right, #FCAB52, #D4145A, #B42A63, #FCAB52);
+    background-image: linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--primary)));
 }
 
 .gradient-text-light {

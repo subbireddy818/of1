@@ -16,10 +16,10 @@ const buttonVariants = cva(
                 outline:
                     "border-2 border-gray-100 bg-white shadow-sm hover:border-primary hover:text-primary",
                 secondary:
-                    "bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20",
+                    "bg-secondary/10 text-secondary border border-secondary/20 hover:bg-secondary/20",
                 ghost: "hover:bg-accent hover:text-accent-foreground",
                 link: "text-primary underline-offset-4 hover:underline",
-                premium: "bg-gradient-to-r from-primary via-magenta to-primary bg-[length:200%_auto] animate-gradient-x text-white shadow-xl hover:scale-105"
+                premium: "bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_auto] animate-gradient-x text-white shadow-xl hover:scale-105"
             },
             size: {
                 default: "h-14 px-8 py-2",

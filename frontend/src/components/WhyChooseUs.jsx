@@ -9,7 +9,7 @@ const reasons = [
         number: '01',
         title: 'Expert Instructors',
         description: 'Guided by Michelin-experienced chefs who specialize in child development. Every instructor is passionate, certified, and dedicated to your child\'s growth.',
-        color: '#D4145A',
+        color: '#FCAB52',
         highlight: true,
         image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80',
     },
@@ -35,7 +35,7 @@ const reasons = [
         number: '04',
         title: 'Award-Winning Curriculum',
         description: 'Nationally recognised for blending creativity, nutrition, and technique into a programme that consistently produces confident young cooks.',
-        color: '#B42A63',
+        color: '#D4145A',
     },
 ];
 
@@ -67,9 +67,9 @@ export const WhyChooseUs = () => {
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.25em] text-[#D4145A] border border-[#D4145A]/30 bg-[#D4145A]/10 px-4 py-2 rounded-full"
+                            className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.25em] text-primary border border-primary/30 bg-primary/10 px-4 py-2 rounded-full"
                         >
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#D4145A] animate-pulse" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
                             Why Orange Figs
                         </motion.span>
                         <motion.h2
@@ -81,7 +81,7 @@ export const WhyChooseUs = () => {
                         >
                             The Orange Figs <br />
                             <span style={{
-                                background: 'linear-gradient(135deg, #D4145A, #FCAB52)',
+                                background: 'linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--primary)))',
                                 WebkitBackgroundClip: 'text',
                                 WebkitTextFillColor: 'transparent'
                             }}>
@@ -122,7 +122,7 @@ export const WhyChooseUs = () => {
                         <div className="absolute inset-0 p-10 flex flex-col justify-between">
                             <div className="flex items-center justify-between">
                                 <span className="text-7xl font-black text-white/10">01</span>
-                                <div className="w-12 h-12 rounded-2xl bg-[#D4145A] flex items-center justify-center text-white">
+                                <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center text-white">
                                     <UserCheck size={22} strokeWidth={2.5} />
                                 </div>
                             </div>
@@ -139,7 +139,7 @@ export const WhyChooseUs = () => {
                                 <p className="text-white/70 leading-relaxed">
                                     Guided by Michelin-experienced chefs who specialize in child development. Passionate, certified, and dedicated to every young chef's growth.
                                 </p>
-                                <div className="inline-flex items-center gap-2 text-[#D4145A] font-bold text-sm group-hover:gap-3 transition-all">
+                                <div className="inline-flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-3 transition-all">
                                     Learn more <ArrowUpRight size={16} />
                                 </div>
                             </div>
@@ -197,7 +197,7 @@ export const WhyChooseUs = () => {
                         <div key={i} className="text-center space-y-1">
                             <div
                                 className="text-4xl font-black tracking-tight"
-                                style={{ color: ['#D4145A', '#FCAB52', '#74BB42', '#B42A63', '#366BC4'][i] }}
+                                style={{ color: ['#FCAB52', '#D4145A', '#EA580C', '#B42A63', '#F97316'][i] }}
                             >
                                 {stat.value}
                             </div>
@@ -209,6 +209,6 @@ export const WhyChooseUs = () => {
                 </motion.div>
 
             </div>
-        </section>
+        </section >
     );
 };
